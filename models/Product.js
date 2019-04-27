@@ -7,7 +7,12 @@ const ProductSchema = new Schema({
         type: String, required: true
     },
     price: {
-        type: Number, required: true
+        type: Number,
+        required: true,
+        validate : {
+            validator : Number.isInteger,
+            message   : '{VALUE} is not an integer value'
+        }
     },
     description: {
         type: String, required: true

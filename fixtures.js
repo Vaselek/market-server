@@ -54,7 +54,7 @@ const run = async () => {
             description: 'Very Cool Asus',
             category: categories[0]._id,
             user: users[0]._id,
-            image: 'asus.jpg'
+            image: 'asus.jpeg'
         },
         {
             title: 'Nissan',
